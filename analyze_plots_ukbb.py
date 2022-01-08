@@ -132,8 +132,7 @@ def density_plot(setA_df,nor_df,feature_names, path_plot_save, label):
     '''
     1. DENSITY PLOTS
     '''
-#path_plot_save ='/home/irem/Desktop/ACDC_Test/AF_CLF_FUSION_PLOTS/Most_common_feats_density_plots/'
-### plot of normal and minf subjects with the most frequent feature
+#path_plot_save ='.../AF_CLF_FUSION_PLOTS/Most_common_feats_density_plots/'
     for i in range(nor_df.shape[1]):
 #        [overlap_perc, discriminative_power] = overlap(setA_df, nor_df, 100,feature_names, path_plot_save,label)
         p1 =sns.kdeplot(setA_df.iloc[:,i],kernel = 'gau', legend=True,  shade = True, color='r', label='%s'%label)
@@ -151,10 +150,8 @@ def dist_plot (setA_df,nor_df_training,feature_votes_sorted, path_plot_save, lab
     label=label.capitalize()
    
     '''
-    2 . Flexibly plot a univariate distribution of observations.
+    2 . plot a univariate distribution of observations.
     '''
-#path_plot_save ='/home/irem/Desktop/ACDC_Test/AF_CLF_FUSION_PLOTS/Most_common_feats_density_plots/'
-### plot of normal and minf subjects with the most frequent feature
     for i in range(nor_df_training.shape[1]):
         p1 =sns.distplot(setA_df.iloc[:,i], color='r', label='%s'%label)
         p2 =sns.distplot(nor_df_training.iloc[:,i],color='b', label='Control')
