@@ -1,2 +1,3 @@
-# radiomics_atrial_fibrillation
-Identifying alterations in the cardiac ventricles using radiomics
+# Identifying alterations in the cardiac ventricles
+### About 
+ In this work, a radiomics approach was proposed to study in-depth the changes that occur in AF, integrating a comprehensive set of size, shape, intensity and texture radiomic descriptors in the analysis. The method combines then feature selection and machine learning to discriminate AF subgroups as compared to healthy individuals. The obtained results demonstrate that the proposed radiomics model is capable of detecting intensity and textural changes well beyond the capabilities of conventional imaging phenotypes, indicating its potential for improved understanding of the longitudinal effects of atrial fibrillation on cardiovascular health and disease.
