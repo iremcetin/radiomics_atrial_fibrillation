@@ -52,7 +52,7 @@ from scipy.stats import mode
 
 ### INPUT FILES #### ##########################################################
 ## Define the directories TO READ
-path_to_read ='/home/irem/Desktop/ACDC_Test/AFIB_Classifier_Fusion/'
+path_to_read ='.../AFIB_Classifier_Fusion/'
 count_model =10 # this will build the model for 10 times = Number of sets
 ### indices for 
 
@@ -313,7 +313,7 @@ final_results.plot(x='Number_of_features', y='scores', kind ='line', title ='Atr
 
 
 import dill                            #pip install dill --user
-filename = '/home/irem/Desktop/ACDC_Test/Methods/globalsave_AFIB_ensemble_features.pkl'
+filename = '.../globalsave_AFIB_ensemble_features.pkl'
 dill.dump_session(filename)
 #'''
 #DATA VISUALIZATION
@@ -321,7 +321,7 @@ dill.dump_session(filename)
 #'''
 #1. DENSITY PLOTS
 #'''
-#path_plot_save ='/home/irem/Desktop/ACDC_Test/AF_CLF_FUSION_PLOTS/Most_common_feats_density_plots/'
+#path_plot_save ='.../AF_CLF_FUSION_PLOTS/Most_common_feats_density_plots/'
 #### plot of normal and minf subjects with the most frequent feature
 #import matplotlib.pyplot as plt
 #for i in range(len(feature_ids_top10)):
@@ -332,15 +332,7 @@ dill.dump_session(filename)
 #    plt.savefig(path_plot_save+'%s.png'%title)
 #    plt.close()
 #    
-#'''
-#2. HEATMAP OF RADIOMICS --> NOT WORKING
-#'''
-##
-##path_heatmap = '/home/irem/Desktop/ACDC_Test/AF_CLF_FUSION_PLOTS/Heatmap/'
-##
-##
-##sns.heatmap(setA_df, annot=True)
-#
+
 #
 #'''
 #3. CORRELOGRAM
